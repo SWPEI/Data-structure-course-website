@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OJTEST</title>
+</head>
+<body>
+<p class="p1">
+	<span class="s1">
+		1、将单链表中前 m 个元素和后 n 个元素进行互换
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			题目描述
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		目的：使用C++模板设计单链表的抽象数据类型（ADT）。并在此基础上，使用单链表ADT的基本操作，设计并实现单链表的简单算法设计。
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		内容：
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		（1）请使用模板设计单链表的抽象数据类型。（由于该环境目前仅支持单文件的编译，故将所有内容都集中在一个源文件内。在实际的设计中，推荐将抽象类及对应的派生类分别放在单独的头文件中。参考网盘中的ADT原型文件。）
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		（2）ADT的简单应用：使用该ADT设计并实现单链表应用场合的一些简单算法设计。
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		应用1：假设有一个带头结点的单链表A，现要求设计一个算法，实现单链表的就地逆置，即利用原表的存储空间实现表中前m 个元素和后n 个元素的互换。
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		参考函数原型：template&lt;class ElemType&gt;
+	</span>
+</p>
+<p class="p4">
+	<span class="s1">
+		void Exchange_L( LinkList&lt;ElemType&gt; &amp;L, int m );
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输入说明
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第一行：待处理单链表的长度
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第二行：待处理单链表的数据元素（数据元素之间以空格分隔）
+	</span>
+</p>
+<p class="p5">
+	<span class="s1">
+		第三行：逆置位置m
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输出说明
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第一行：待处理单链表的遍历结果
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第二行：逆置结果
+	</span>
+</p>
+<p class="p5">
+	<span class="s1">
+		（输入与输出之间以空行分隔）
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输入范例
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		10
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		13 5 27 9 32 123 76 98 54 87
+	</span>
+</p>
+<p class="p5">
+	<span class="s1">
+		5
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输出范例
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		13 5 27 9 32 123 76 98 54 87
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		123 76 98 54 87 13 5 27 9 32
+	</span>
+</p>
+<p class="p6">
+	<span class="s1">
+		2、单链表的连接
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			题目描述
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		目的：使用C++模板设计单链表的抽象数据类型（ADT）。并在此基础上，使用单链表ADT的基本操作，设计并实现单链表的简单算法设计。
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		内容：
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		（1）请使用模板设计单链表的抽象数据类型。（由于该环境目前仅支持单文件的编译，故将所有内容都集中在一个源文件内。在实际的设计中，推荐将抽象类及对应的派生类分别放在单独的头文件中。参考网盘中的ADT原型文件。）
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		（2）ADT的简单应用：使用该ADT设计并实现单链表应用场合的一些简单算法设计。
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		应用2：假设线性表A=(a1,a2,...,am)，线性表B=(b1,b2,...,bn)，现要求设计一个算法，使用带头结点的单链表存储结构，将这两个链表连接在一起（即令单链表B的首元结点连在单链表A的尾结点之后），且使用A和B的原存储空间。单链表B不再单独存在。输入中的单链表的长度仅作为建表使用，不得在该算法中利用。
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		参考函数原型：template&lt;class ElemType&gt;
+	</span>
+</p>
+<p class="p4">
+	<span class="s1">
+		void Linklist_Contact( LinkList&lt;ElemType&gt; &amp;A, LinkList&lt;ElemType&gt; &amp;B );
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输入说明
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第一行：单链表A的长度
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第二行：单链表A的数据元素（数据元素之间以空格分隔）
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第三行：单链表B的长度
+	</span>
+</p>
+<p class="p5">
+	<span class="s1">
+		第四行：单链表B的数据元素（数据元素之间以空格分隔）
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输出说明
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第一行：单链表A的遍历结果
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第二行：单链表B的遍历结果
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第三行：连接后单链表A的遍历结果
+	</span>
+</p>
+<p class="p5">
+	<span class="s1">
+		（输入与输出之间以空行分隔）
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输入范例
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		10
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		13 5 27 9 32 123 76 98 54 87
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		5
+	</span>
+</p>
+<p class="p5">
+	<span class="s1">
+		1 3 7 8 11
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输出范例
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		13 5 27 9 32 123 76 98 54 87
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		1 3 7 8 11
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		13 5 27 9 32 123 76 98 54 87 1 3 7 8 11
+	</span>
+</p>
+<p class="p6">
+	<span class="s1">
+		3、2个单链表的交叉归并
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			题目描述
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		目的：使用C++模板设计单链表的抽象数据类型（ADT）。并在此基础上，使用单链表ADT的基本操作，设计并实现单链表的简单算法设计。
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		内容：
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		（1）请使用模板设计单链表的抽象数据类型。（由于该环境目前仅支持单文件的编译，故将所有内容都集中在一个源文件内。在实际的设计中，推荐将抽象类及对应的派生类分别放在单独的头文件中。参考网盘中的ADT原型文件。）
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		（2）ADT的简单应用：使用该ADT设计并实现单链表应用场合的一些简单算法设计。
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		应用3：假设线性表A=(a1,a2,...,am)，线性表B=(b1,b2,...,bn)，现要求设计一个算法，使用带头结点的单链表存储结构，按照下列规则合并A、B为线性表C。即：A和B的元素间隔排列，且使用A和B的原存储空间，且B不再单独存在。输入中的单链表的长度不得在该算法中利用，仅作为建表使用。
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		参考函数原型：template&lt;class ElemType&gt;
+	</span>
+</p>
+<p class="p4">
+	<span class="s1">
+		void Merge_L( LinkList&lt;ElemType&gt; &amp;A, LinkList&lt;ElemType&gt; &amp;B );
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输入说明
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第一行：单链表A的长度
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第二行：单链表A的数据元素（数据元素之间以空格分隔）
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第三行：单链表B的长度
+	</span>
+</p>
+<p class="p5">
+	<span class="s1">
+		第四行：单链表B的数据元素（数据元素之间以空格分隔）
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输出说明
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第一行：单链表A的遍历结果
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第二行：单链表B的遍历结果
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第三行：交叉归并后单链表A的遍历结果
+	</span>
+</p>
+<p class="p5">
+	<span class="s1">
+		（输入与输出之间以空行分隔）
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输入范例
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		10
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		13 5 27 9 32 123 76 98 54 87
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		5
+	</span>
+</p>
+<p class="p5">
+	<span class="s1">
+		1 3 7 8 11
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输出范例
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		13 5 27 9 32 123 76 98 54 87
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		1 3 7 8 11
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		13 1 5 3 27 7 9 8 32 11 123 76 98 54 87
+	</span>
+    <span class="s3">
+		4、有序单链表的归并
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			题目描述
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		目的：使用C++模板设计单链表的抽象数据类型（ADT）。并在此基础上，使用单链表ADT的基本操作，设计并实现单链表的简单算法设计。
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		内容：
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		（1）请使用模板设计单链表的抽象数据类型。（由于该环境目前仅支持单文件的编译，故将所有内容都集中在一个源文件内。在实际的设计中，推荐将抽象类及对应的派生类分别放在单独的头文件中。参考网盘中的ADT原型文件。）
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		（2）ADT的简单应用：使用该ADT设计并实现单链表应用场合的一些简单算法设计。
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		应用4：假设线性表 A和B，分别由单链表A和B 存储，其中数据元素按值非递减有序排列（即已经有序），现要求设计一个算法，将A和B归并为一个线性表 , 其数据元素仍按值非递减排列。要求使用A和B的原存储空间，且B不再单独存在。输入中的单链表的长度不得在归并算法中利用，仅作为建表使用。
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		参考函数原型：template&lt;class ElemType&gt;
+	</span>
+</p>
+<p class="p4">
+	<span class="s1">
+		void Merge_L_Order( LinkList&lt;ElemType&gt; &amp;A, LinkList&lt;ElemType&gt; &amp;B );
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输入说明
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第一行：有序单链表A的长度
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第二行：有序单链表A的数据元素（数据元素之间以空格分隔）
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第三行：有序单链表B的长度
+	</span>
+</p>
+<p class="p5">
+	<span class="s1">
+		第四行：有序单链表B的数据元素（数据元素之间以空格分隔）
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输出说明
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第一行：单链表A的遍历结果
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第二行：单链表B的遍历结果
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第三行：归并后单链表A的遍历结果
+	</span>
+</p>
+<p class="p5">
+	<span class="s1">
+		（输入与输出之间以空行分隔）
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输入范例
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		4
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		3 5 8 11
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		5
+	</span>
+</p>
+<p class="p5">
+	<span class="s1">
+		2 6 8 9 11
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输出范例
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		3 5 8 11
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		2 6 8 9 11
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		2 3 5 6 8 8 9 11 11
+	</span>
+</p>
+<p class="p6">
+	<span class="s1">
+		5、有序单链表的提纯
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			题目描述
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		目的：使用C++模板设计单链表的抽象数据类型（ADT）。并在此基础上，使用单链表ADT的基本操作，设计并实现单链表的简单算法设计。
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		内容：
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		（1）请使用模板设计单链表的抽象数据类型。（由于该环境目前仅支持单文件的编译，故将所有内容都集中在一个源文件内。在实际的设计中，推荐将抽象类及对应的派生类分别放在单独的头文件中。参考网盘中的ADT原型文件。）
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		（2）ADT的简单应用：使用该ADT设计并实现单链表应用场合的一些简单算法设计。
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		应用5：试设计一个算法，删除有序单链表A中的冗余元素，即使得操作之后的单链表中只保留操作之前表中所有值都不相同的元素，并保持其有序性。要求利用原表中的结点，并释放A表中冗余的结点空间。
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		参考函数原型：template&lt;class ElemType&gt;
+	</span>
+</p>
+<p class="p4">
+	<span class="s1">
+		void Purge_Lk_OL( LinkList&lt;ElemType&gt; &amp;A );
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输入说明
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第一行：有序单链表的长度
+	</span>
+</p>
+<p class="p5">
+	<span class="s1">
+		第二行：有序单链表的数据元素（数据元素之间以空格分隔）
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输出说明
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第一行：有序单链表的遍历结果
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第二行：提纯后有序单链表的遍历结果
+	</span>
+</p>
+<p class="p5">
+	<span class="s1">
+		（输入与输出之间以空行分隔）
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输入范例
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		7
+	</span>
+</p>
+<p class="p5">
+	<span class="s1">
+		3 3 5 5 8 11 11
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输出范例
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		3 3 5 5 8 11 11
+	</span>
+</p>
+<p class="p6">
+	<span class="s2">
+		3 5 8 11
+	</span>
+    <span class="s1">
+		6、有序单链表的归并+提纯
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			题目描述
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		目的：使用C++模板设计单链表的抽象数据类型（ADT）。并在此基础上，使用单链表ADT的基本操作，设计并实现单链表的简单算法设计。
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		内容：
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		（1）请使用模板设计单链表的抽象数据类型。（由于该环境目前仅支持单文件的编译，故将所有内容都集中在一个源文件内。在实际的设计中，推荐将抽象类及对应的派生类分别放在单独的头文件中。参考网盘中的ADT原型文件。）
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		（2）ADT的简单应用：使用该ADT设计并实现单链表应用场合的一些简单算法设计。
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		应用6：假设2个线性表分别由单链表A和B存储，其中数据元素按值非递减有序排列（即已经有序），现要求设计一个算法，将A和B归并为一个线性表 , 其数据元素仍按值非递减排列，且表中不存在值相同的元素。要求使用A和B的原存储空间，且B不再单独存在。输入中的单链表的长度不得在归并算法中利用，仅作为建表使用。
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		参考函数原型：template&lt;class ElemType&gt;
+	</span>
+</p>
+<p class="p4">
+	<span class="s1">
+		void Merge_L_Pure_Order( LinkList&lt;ElemType&gt; &amp;A, LinkList&lt;ElemType&gt; &amp;B );
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输入说明
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第一行：待处理有序单链表A的长度
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第二行：待处理有序单链表A的数据元素（数据元素之间以空格分隔）
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第三行：待处理有序单链表B的长度
+	</span>
+</p>
+<p class="p5">
+	<span class="s1">
+		第四行：待处理有序单链表B的数据元素（数据元素之间以空格分隔）
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输出说明
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第一行：有序单链表A的遍历结果
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第二行：有序单链表B的遍历结果
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第三行：合并提纯后有序单链表A的遍历结果
+	</span>
+</p>
+<p class="p5">
+	<span class="s1">
+		（输入与输出之间以空行分隔）
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输入范例
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		8
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		3 3 5 5 8 8 11 11
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		7
+	</span>
+</p>
+<p class="p5">
+	<span class="s1">
+		2 2 6 8 8 9 11
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输出范例
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		3 3 5 5 8 8 11 11
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		2 2 6 8 8 9 11
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		2 3 5 6 8 9 11&nbsp;
+	</span>
+</p>
+<p class="p6">
+	<span class="s1">
+		7、一元多项式的加/减法运算
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			题目描述
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		目的：使用C++模板设计单链表的抽象数据类型（ADT）。并在此基础上，稍加改动，针对一元多项式建立相应的稀疏多项式ADT，使用单链表ADT的基本操作，设计并实现稀疏一元多项式的加法计算的算法设计。
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		内容：
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		（1）请参照单链表的ADT模板，设计稀疏一元多项式的抽象数据类型。（由于该环境目前仅支持单文件的编译，故将所有内容都集中在一个源文件内。在实际的设计中，推荐将抽象类及对应的派生类分别放在单独的头文件中。参考网盘中的单链表ADT原型文件，自行设计稀疏一元多项式的ADT。）
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		（2）ADT的简单应用：使用该ADT设计并实现稀疏一元多项式的加法计算的算法设计。
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		应用1：假设2个稀疏一元多项式分别由带头结点的有序单链表A和B存储（指数项递增有序）。现要求设计一个算法，实现稀疏一元多项式的加减法计算。要求使用A和B的原存储空间，且计算后B不再单独存在。输入中的单链表的长度不得在计算算法中利用，仅作为建表使用。
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		注意：加/减法计算后，如某一项的结果系数为0，则该项要从多项式链表中删除。
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		参考函数原型：template&lt;class ElemType1，class ElemType2&gt;
+	</span>
+</p>
+<p class="p4">
+	<span class="s1">
+		void Add_Poly( poly_LinkList&lt;ElemType&gt; &amp;A, poly_LinkList&lt;ElemType&gt; &amp;B, int add_sub );
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输入说明
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第一行：加/减法选择（0：加法
+		<span class="Apple-converted-space">
+			&nbsp;
+		</span>
+		1：减法）
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第二行：一元多项式A的项数
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第三行：一元多项式A的各项的系数（系数之间以空格分隔）
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第四行：一元多项式A的各项的指数（指数之间以空格分隔）
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第五行：一元多项式B的项数
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第六行：一元多项式B的各项的系数（系数之间以空格分隔）
+	</span>
+</p>
+<p class="p5">
+	<span class="s1">
+		第七行：一元多项式B的各项的指数（指数之间以空格分隔）
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输出说明
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第一行：多项式A的第一项的系数、指数（以空格分隔）
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第一行：多项式A的第二项的系数、指数（以空格分隔）
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		...
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第n行：多项式A的第n项的系数、指数（以空格分隔） （假设多项式A的项数为n）
+	</span>
+</p>
+<p class="p7">
+    &nbsp;
+</p>
+<p class="p3">
+	<span class="s1">
+		第一行：多项式B的第一项的系数、指数（以空格分隔）
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第一行：多项式B的第二项的系数、指数（以空格分隔）
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		...
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第m行：多项式B的第m项的系数、指数（以空格分隔） （假设多项式B的项数为m）
+	</span>
+</p>
+<p class="p7">
+    &nbsp;
+</p>
+<p class="p3">
+	<span class="s1">
+		第一行：加/减法计算后，结果多项式A的第一项的系数、指数（以空格分隔）
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第一行：加/减法计算后，结果多项式A的第二项的系数、指数（以空格分隔）
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		...
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第p行：加/减法计算后，结果多项式A的第n项的系数、指数（以空格分隔） （假设结果多项式的项数为p）
+	</span>
+</p>
+<p class="p5">
+	<span class="s1">
+		（输入与输出之间以空行分隔）
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输入范例
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		1
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		6
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		7 3 -22 9 5 -8
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		0 1 7 8 17 100
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		3
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		8 22 -9
+	</span>
+</p>
+<p class="p5">
+	<span class="s1">
+		1 7 8
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输出范例
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		7 0
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		3 1
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		-22 7
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		9 8
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		5 17
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		-8 100
+	</span>
+</p>
+<p class="p7">
+    &nbsp;
+</p>
+<p class="p3">
+	<span class="s1">
+		8 1
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		22 7
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		-9 8
+	</span>
+</p>
+<p class="p7">
+    &nbsp;
+</p>
+<p class="p3">
+	<span class="s1">
+		7 0
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		-5 1
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		-44 7
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		18 8
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		5 17
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		-8 100
+	</span>
+</p>
+<p class="p6">
+	<span class="s1">
+		8、长整数加法运算（不使用单链表存储计算结果）
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			题目描述
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		目的：使用C++模板设计单链表的抽象数据类型（ADT）。并在此基础上，使用单链表ADT的基本操作，设计并实现单链表的应用算法设计。
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		内容：
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		（1）请使用模板设计单链表的抽象数据类型。（由于该环境目前仅支持单文件的编译，故将所有内容都集中在一个源文件内。在实际的设计中，推荐将抽象类及对应的派生类分别放在单独的头文件中。参考网盘中的ADT原型文件。）
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		（2）ADT的应用：使用该ADT设计并实现单链表应用场合的算法设计。
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		应用：假设2个任意长度的整数x、y分别由带头结点的单链表A和B存储，现要求设计一个算法，实现任意长的整数进行加法运算。
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		参考函数原型：template&lt;class ElemType&gt;
+	</span>
+</p>
+<p class="p8">
+	<span class="s1">
+		void Long_Int_Add( LinkList&lt;ElemType&gt; &amp;A, LinkList&lt;ElemType&gt; &amp;B, string &amp;result, const int &amp;len_A, const int &amp;len_B );
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		辅助函数原型：
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		（1）从长整数的低位开始拆分（4位为一组，即不超过9999的非负整数），依次存放在单链表的每个结点的数据域中；头结点的数据域存放正负数标志（正数或0：1，负数：-1）。
+	</span>
+</p>
+<p class="p8">
+	<span class="s1">
+		template&lt;class ElemType&gt;
+	</span>
+</p>
+<p class="p8">
+	<span class="s1">
+		void Input_Int_Division( LinkList&lt;ElemType&gt; &amp;L, string &amp;str, int &amp;length );
+		<span class="Apple-converted-space">
+			&nbsp;
+		</span>
+		（length：长整数分割后的block数，恰为存储用单链表的长度）
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		（2）计算结果中间位格式控制
+	</span>
+</p>
+<p class="p8">
+	<span class="s1">
+		string Int_String( int result );
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		（3）两个长整数的绝对值大小比较（x&gt;y 返回值为1；x&lt;y 返回值为2；x=y 返回值为0；）
+	</span>
+</p>
+<p class="p8">
+	<span class="s1">
+		template&lt;class ElemType&gt;
+	</span>
+</p>
+<p class="p8">
+	<span class="s1">
+		int Two_LongNum_Compare( LinkList&lt;ElemType&gt; &amp;A, LinkList&lt;ElemType&gt; &amp;B, const int &amp;len_A, const int &amp;len_B );
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		（4）单链表ADT基本操作：单链表的逆置（实际计算时，鉴于单链表的顺序查找的特性，存储在单链表中的长整数需逆置，由原始的高位到低位排列，逆置为低位到高位降序排列。）
+	</span>
+</p>
+<p class="p8">
+	<span class="s1">
+		template&lt;class ElemType&gt;
+	</span>
+</p>
+<p class="p4">
+	<span class="s1">
+		void LinkList&lt;ElemType&gt;::ListReverse();
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输入说明
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第一行：长整数x
+	</span>
+</p>
+<p class="p5">
+	<span class="s1">
+		第二行：长整数y
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输出说明
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第一行：格式化后的长整数x（从低位到高位每4位用&ldquo;,&rdquo;分开）
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第二行：格式化后的长整数y（从低位到高位每4位用&ldquo;,&rdquo;分开）
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第三行：空行
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		第四行：格式化后的计算结果（从低位到高位每4位用&ldquo;,&rdquo;分开）
+	</span>
+</p>
+<p class="p5">
+	<span class="s1">
+		（输入与输出之间以空行分隔）
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输入范例
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		-53456467576846547658679870988098
+	</span>
+</p>
+<p class="p5">
+	<span class="s1">
+		435643754856985679
+	</span>
+</p>
+<p class="p2">
+	<span class="s1">
+		<strong>
+			输出范例
+		</strong>
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		-5345,6467,5768,4654,7658,6798,7098,8098
+	</span>
+</p>
+<p class="p3">
+	<span class="s1">
+		43,5643,7548,5698,5679
+	</span>
+</p>
+<p class="p7">
+    &nbsp;
+</p>
+<p class="p3">
+	<span class="s1">
+		-5345,6467,5768,4611,2014,9250,1400,2419
+	</span>
+</p>
+
+</body>
+</html>

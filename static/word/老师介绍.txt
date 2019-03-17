@@ -1,0 +1,728 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<base href="http://desktop-4b9g99h:8080/b2csys/">
+
+<title>数据结构重点课程网站</title>
+
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="数据结构重点课程网站">
+<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+<LINK rel=stylesheet type=text/css href="commfiles/css.css">
+<LINK rel=stylesheet type=text/css href="files/style.css">
+<STYLE type=text/css>
+.STYLE3 {
+	COLOR: #ffffff
+}
+</STYLE>
+
+<STYLE type=text/css>
+.STYLE1 {
+	FONT-WEIGHT: bold
+}
+
+.STYLE2 {
+	FONT-WEIGHT: bold
+}
+
+BODY {
+	BACKGROUND-COLOR: #ffffff
+}
+</STYLE>
+
+<STYLE type=text/css>
+.STYLE5 {
+	FONT-SIZE: 9px
+}
+</STYLE>
+
+<LINK rel=stylesheet type=text/css href="files/css.css">
+<STYLE type=text/css>
+BODY {
+	MARGIN: 0px
+}
+</STYLE>
+</head>
+
+<body>
+	
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<base href="http://desktop-4b9g99h:8080/b2csys/">
+
+<title>My JSP 'top.jsp' starting page</title>
+
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="This is my page">
+<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+<LINK rel=stylesheet type=text/css href="files/style.css">
+<LINK rel=stylesheet type=text/css href="commfiles/css.css">
+<STYLE type=text/css>
+.STYLE3 {
+	COLOR: #ffffff
+}
+</STYLE>
+
+<STYLE type=text/css>
+.STYLE1 {
+	FONT-WEIGHT: bold
+}
+
+.STYLE2 {
+	FONT-WEIGHT: bold
+}
+
+BODY {
+	BACKGROUND-COLOR: #ffffff
+}
+</STYLE>
+
+<STYLE type=text/css>
+.STYLE5 {
+	FONT-SIZE: 9px
+}
+</STYLE>
+
+<LINK rel=stylesheet type=text/css href="files/css.css">
+<STYLE type=text/css>
+BODY {
+	MARGIN: 0px
+}
+</STYLE>
+<script language="javascript">
+	function show(aa) {
+		document.all.div4.style.display = "none";
+		aa.style.display = "block";
+
+	}
+	function cleardiv(aa) {
+		document.all.div4.style.display = "none";
+		aa.style.display = "none";
+	}
+</script>
+</head>
+
+
+<body>
+
+	<TABLE border=0 cellSpacing=0 cellPadding=0 width=1008 align=center
+		height=100>
+		<TBODY>
+			<TR>
+				<TD width=1008>
+					
+					<img src=" /b2csys/WebRoot/upfile/20180504105950.jpg/" width="100%"
+					height="150">
+				</TD>
+			</TR>
+		</TBODY>
+	</TABLE>
+
+
+	<form action="/b2csys/search.jsp" method="post">
+		<center>
+			<TABLE border=0 cellSpacing=0 cellPadding=0 width="1008" align=center>
+				<TBODY>
+					<TR>
+						<TD width=7><IMG src="files/me.jpg" width=7 height=35></TD>
+						<TD background=files/me1.jpg width=1000 align=right>
+							<TABLE class=meun border=0 cellSpacing=0 cellPadding=0
+								width="96%" align=center>
+								<TBODY>
+									<TR>
+										<TD width=80 align=middle><A href="index.jsp">首页</A></TD>
+										<TD align=middle><IMG src="files/me2.jpg" width=2
+											height=28></TD>
+										<TD width=90 align=middle><A href="/b2csys/notices.jsp">最新通知</A></TD>
+										<TD align=middle><IMG src="files/me2.jpg" width=2
+											height=28></TD>
+										<TD width=90 align=middle><A href="/b2csys/130101RL.htm" target="_blank">教学规划</A></TD>
+										<TD align=middle><IMG src="files/me2.jpg" width=2
+											height=28></TD>
+										<TD width=90 align=middle><A href="/b2csys/outline.jsp">教学大纲</A></TD>
+										<TD align=middle><IMG src="files/me2.jpg" width=2
+											height=28></TD>
+										<TD width=90 align=middle><A href="/b2csys/team.jsp">师资队伍</A></TD>
+										<TD align=middle><IMG src="files/me2.jpg" width=2
+											height=28></TD>
+										<TD width=90 align=middle><A href="/b2csys/study.jsp">研究成果</A></TD>
+										<TD align=middle><IMG src="files/me2.jpg" width=2
+											height=28></TD>
+										<TD width=90 align=middle><A href="/b2csys/video.jsp">教学资源</A></TD>
+										<TD align=middle><IMG src="files/me2.jpg" width=2
+											height=28></TD>
+										<TD width=90 align=middle><A href="http://acm.dhu.edu.cn">OJ系统</A></TD>
+										<TD align=middle><IMG src="files/me2.jpg" width=2
+											height=28></TD>
+										
+										<TD width=90 align=middle><A href="/b2csys/msg.jsp">留言交流</A></TD>
+										<TD align=middle><IMG src="files/me2.jpg" width=2
+											height=28></TD>
+									</TR>
+								</TBODY>
+							</TABLE>
+						</TD>
+						<TD width=7><IMG src="files/me3.jpg" width=7 height=35></TD>
+					</TR>
+				</TBODY>
+			</TABLE>
+			<!--  
+      <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" 
+      background=files/bgtop.gif height=37>
+        <TBODY>
+        <TR>
+          <TD vAlign=center width="75%">
+            
+            <TABLE class=9 border=0 cellSpacing=0 cellPadding=0 width="100%" 
+            align=center>
+              <TBODY>
+              <TR>
+                <TD class=b vAlign=top width="96%" align=left>
+                  <DIV align=left>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <A href="index.jsp" class="menu" onmouseover="cleardiv(div4)" ><FONT color=#ffffff>首页</FONT></A>
+                  | <A href="/b2csys/notices.jsp" onmouseover="cleardiv(div4)"><FONT color=#ffffff>新闻公告</FONT></A>
+                  | <A href="" id="nav4" class="menu" onmouseover="show(div4)"><FONT color=#ffffff>车票查询</FONT></A>
+                  | <A href="/b2csys/otherinfo.jsp" onmouseover="cleardiv(div4)"><FONT color=#ffffff>其它信息</FONT></A>  
+                  | <A href="/b2csys/msg.jsp" onmouseover="cleardiv(div4)"><FONT color=#ffffff>留言交流</FONT></A>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <select id="protype" name="protype">
+                  		<option value="">--全部线路--</option>
+                  		
+                  		<option value=""></option>
+                  		
+                  </select>
+                  &nbsp;<input type="submit" value="search">&nbsp;&nbsp;
+                   </DIV></TD></TR></TBODY></TABLE>
+                   
+                   </TD>
+          <TD width="125%">
+            </TD></TR>
+        <TR>
+          <TD height=4 vAlign=center colSpan=3></TD></TR></TBODY></TABLE>
+          -->
+		</center>
+	</form>
+
+
+	<TABLE border=0 cellSpacing=0 cellPadding=0 width=1008 align=center>
+		<tr>
+			<td>
+				<DIV align=right>
+					
+					<A href="/b2csys/login.jsp"><FONT color=#000000>登录</FONT></A>
+					&nbsp;&nbsp;&nbsp; <A href="/b2csys/register.jsp"><FONT
+						color=#000000>注册帐号</FONT></A> &nbsp;&nbsp;&nbsp;
+					
+				</DIV>
+			</td>
+		</tr>
+	</table>
+
+</body>
+</html>
+
+	<center>
+		<TABLE border=0 cellSpacing=0 cellPadding=0 width=1006 align=center>
+			<TBODY>
+				<TR>
+					<TD vAlign=top width=188>
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<base href="http://desktop-4b9g99h:8080/b2csys/">
+
+<title>My JSP 'left.jsp' starting page</title>
+
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="This is my page">
+<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+<LINK rel=stylesheet type=text/css href="commfiles/css.css">
+</head>
+
+<body>
+	<center>
+		<TABLE border=0 cellSpacing=0 cellPadding=0 width=231 align=left>
+			<TBODY>
+				<TR>
+					<TD>
+						<TABLE border=0 cellSpacing=0 cellPadding=0 width=231>
+							<TBODY>
+								<TR>
+									<TD height=35 background=files/gg.jpg>
+										<TABLE border=0 cellSpacing=0 cellPadding=0 width=208
+											align=center>
+											<TBODY>
+												<TR>
+													<TD class=ct align=left>最新通知</TD>
+													<TD width=39 align=right></TD>
+												</TR>
+											</TBODY>
+										</TABLE>
+									</TD>
+								</TR>
+								<TR>
+									<TD>
+										<TABLE class=bb border=0 cellSpacing=0 cellPadding=0 width=231>
+											<TBODY>
+												<TR>
+													<TD vAlign=top align=left>
+														<DIV style="MARGIN: 10px">
+															<TABLE style="BORDER-TOP: #cecece 1px solid" border=0
+																cellSpacing=0 cellPadding=0 width=208 align=center>
+																<TBODY>
+																	<TR>
+																		<TD height=30>
+																			<TABLE id=standard border=0 cellSpacing=0
+																				cellPadding=0 width="100%">
+																				<TBODY>
+																					
+																					<TR>
+																						<TD height=30 vAlign=center
+																							background=files/lb.jpg align=left><SPAN
+																							class=lin><A
+																								title="test7"
+																								href="noticeDetail.jsp?id=18"
+																								target=_self>test7 </A></SPAN></TD>
+																					</TR>
+																					<TR id=proclass2>
+																						<TD style="HEIGHT: 0px" vAlign=center align=left></TD>
+																					</TR>
+																					
+																					<TR>
+																						<TD height=30 vAlign=center
+																							background=files/lb.jpg align=left><SPAN
+																							class=lin><A
+																								title="test6"
+																								href="noticeDetail.jsp?id=17"
+																								target=_self>test6 </A></SPAN></TD>
+																					</TR>
+																					<TR id=proclass2>
+																						<TD style="HEIGHT: 0px" vAlign=center align=left></TD>
+																					</TR>
+																					
+																					<TR>
+																						<TD height=30 vAlign=center
+																							background=files/lb.jpg align=left><SPAN
+																							class=lin><A
+																								title="test5"
+																								href="noticeDetail.jsp?id=16"
+																								target=_self>test5 </A></SPAN></TD>
+																					</TR>
+																					<TR id=proclass2>
+																						<TD style="HEIGHT: 0px" vAlign=center align=left></TD>
+																					</TR>
+																					
+																					<TR>
+																						<TD height=30 vAlign=center
+																							background=files/lb.jpg align=left><SPAN
+																							class=lin><A
+																								title="test4"
+																								href="noticeDetail.jsp?id=15"
+																								target=_self>test4 </A></SPAN></TD>
+																					</TR>
+																					<TR id=proclass2>
+																						<TD style="HEIGHT: 0px" vAlign=center align=left></TD>
+																					</TR>
+																					
+																					<TR>
+																						<TD height=30 vAlign=center
+																							background=files/lb.jpg align=left><SPAN
+																							class=lin><A
+																								title="test3"
+																								href="noticeDetail.jsp?id=14"
+																								target=_self>test3 </A></SPAN></TD>
+																					</TR>
+																					<TR id=proclass2>
+																						<TD style="HEIGHT: 0px" vAlign=center align=left></TD>
+																					</TR>
+																					
+																					<TR>
+																						<TD height=30 vAlign=center
+																							background=files/lb.jpg align=left><SPAN
+																							class=lin><A
+																								title="test2"
+																								href="noticeDetail.jsp?id=13"
+																								target=_self>test2 </A></SPAN></TD>
+																					</TR>
+																					<TR id=proclass2>
+																						<TD style="HEIGHT: 0px" vAlign=center align=left></TD>
+																					</TR>
+																					
+																				</TBODY>
+																			</TABLE>
+																		</TD>
+																	</TR>
+																</TBODY>
+															</TABLE>
+														</DIV>
+													</TD>
+												</TR>
+											</TBODY>
+										</TABLE>
+									</TD>
+								</TR>
+							</TBODY>
+						</TABLE>
+					</TD>
+				</TR>
+				<TR>
+					<TD height=8></TD>
+				</TR>
+				<TR>
+					<TD><A href="msg.jsp"><IMG border=0 src="files/fe.jpg"
+							width=231 height=48></A></TD>
+				</TR>
+				<TR>
+					<TD height=8></TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+	</center>
+</body>
+</html>
+
+					</TD>
+					<TD vAlign=top width=787>
+						<TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" height=5>
+							<TBODY>
+								<TR>
+									<TD height=5></TD>
+								</TR>
+							</TBODY>
+						</TABLE>
+						<TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+							<TBODY>
+
+								<TR>
+									<TD height=25>
+										<TABLE border=0 cellSpacing=0 cellPadding=0 width=100%>
+											<TBODY>
+												<TR>
+													<TD class=ct background=files/ne.jpg width=150 align=middle>师资队伍</TD>
+													<TD background=files/ne1.jpg align=right>&nbsp;</TD>
+													<TD width=6><IMG src="files/ne2.jpg" width=6 height=29></TD>
+												</TR>
+											</TBODY>
+										</TABLE>
+									</TD>
+								</TR>
+								<TR>
+									<TD height=180 vAlign=top>
+										<STYLE type=text/css>
+.style4 {
+	COLOR: #ff0000
+}
+</STYLE>
+
+										<TABLE class=bb border=0 cellSpacing=0 cellPadding=0
+											align=center>
+											<TBODY>
+												<TR>
+													<TD height=10 vAlign=top></TD>
+												</TR>
+												<TR>
+													<TD>
+														<DIV style="WIDTH: 800px">
+															
+															<table width="100%">
+																<tr bgcolor="#ffffff">
+																	<td align="center">任课老师</td>
+																</tr>
+																<tr bgcolor="#ffffff">
+																	<td align="center">2018-05-21 00:05:08</td>
+																</tr>
+																<tr bgcolor="#ffffff">
+																	<td><table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0px; margin: 0px auto; padding: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 14px; line-height: inherit; font-family: u5b8bu4f53, Tahoma, Geneva, sans-serif; color: rgb(51, 51, 51); border-width: initial !important; border-style: none !important; border-color: initial !important;" width="100%">
+	<tbody style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+		<tr align="left" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+			<td style="margin: 0px; padding: 0px; border-width: 0px; border-style: initial; border-color: initial; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+				<table border="0" cellpadding="0" cellspacing="5" height="100" style="border-collapse: collapse; border-spacing: 0px; margin: 0px auto; padding: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; border-width: initial !important; border-style: none !important; border-color: initial !important;" width="100%">
+					<tbody style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+						<tr style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;" valign="top">
+							<td align="left" style="margin: 0px; padding: 0px; border-width: 0px; border-style: initial; border-color: initial; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+								<p>
+									&nbsp;</p>
+								<h1 class="arti_title" style="margin: 0px; padding: 5px; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(236, 236, 236); border-left-color: initial; border-image: initial; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: inherit; font-stretch: inherit; font-size: 22px; line-height: 26px; font-family: &quot;Microsoft YaHei&quot;; text-align: center; color: rgb(12, 89, 169);">
+									冯向阳&ensp;&ensp;(副教授)</h1>
+								<table height="100" style="border-collapse: collapse; border-spacing: 0px; margin: 0px auto; padding: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; word-break: break-all; border-width: initial !important; border-style: none !important; border-color: initial !important;" valign="top">
+									<tbody style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										<tr align="left" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+											<td align="left" height="40" style="margin: 0px; padding: 0px; border-width: 0px; border-style: initial; border-color: initial; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;" valign="top" width="571">
+												<p style="margin: 0px 0px 10px; padding: 0px; border: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: 1.6; text-align: center;">
+													男&nbsp;副教授 硕士生导师&nbsp;计算机应用系</p>
+												<p style="margin: 0px 0px 10px; padding: 0px; border: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: 1.6;">
+													&nbsp;</p>
+												<p style="margin: 0px 0px 10px; padding: 0px; border: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: 1.6;">
+													&nbsp;</p>
+												<h3 style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+													冯向阳</h3>
+											</td>
+										</tr>
+										<tr style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+											<td align="left" height="20" style="margin: 0px; padding: 0px; border-width: 0px; border-style: initial; border-color: initial; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;" valign="top">
+												<p style="margin: 0px 0px 10px; padding: 0px; border: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: 1.6;">
+													&nbsp;&nbsp;&nbsp;&nbsp;毕业于日本佐贺大学计算机学院，博士后。东华大学计算机学院，副教授。<br />
+													&nbsp;&nbsp;</p>
+											</td>
+										</tr>
+										<tr style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;" valign="top">
+											<td style="margin: 0px; padding: 0px; border-width: 0px; border-style: initial; border-color: initial; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+												<table style="border-collapse: collapse; border-spacing: 0px; margin: 0px auto; padding: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; border-width: initial !important; border-style: none !important; border-color: initial !important;">
+													<tbody style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+														<tr align="left" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;" valign="top">
+															<td align="left" height="30" style="margin: 0px; padding: 0px; border-width: 0px; border-style: initial; border-color: initial; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;" valign="middle">
+																<p style="margin: 0px 0px 10px; padding: 0px; border: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: 1.6;">
+																	<span style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">主要研究方向：</span></p>
+															</td>
+														</tr>
+														<tr align="left" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+															<td style="margin: 0px; padding: 0px; border-width: 0px; border-style: initial; border-color: initial; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;" valign="top">
+																<ul style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; list-style: none;">
+																	<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+																		人机交互</li>
+																	<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+																		计算机管理系统</li>
+																</ul>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<tr style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+			<td style="margin: 0px; padding: 0px; border-width: 0px; border-style: initial; border-color: initial; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+				<table style="border-collapse: collapse; border-spacing: 0px; margin: 0px auto; padding: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; border-width: initial !important; border-style: none !important; border-color: initial !important;" width="100%">
+					<tbody style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+						<tr style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+							<td background="http://cst.dhu.edu.cn/62/80/c3131a25216/images/hengxiangtiaobeijing.jpg" height="30" style="margin: 0px; padding: 0px; border-width: 0px; border-style: initial; border-color: initial; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;" width="100%">
+								<p style="margin: 0px 0px 10px; padding: 0px; border: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: 1.6;">
+									<span style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">&ensp;讲授课程：</span></p>
+							</td>
+						</tr>
+						<tr style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+							<td style="margin: 0px; padding: 0px; border-width: 0px; border-style: initial; border-color: initial; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+								<ul style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; list-style: none;">
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										本科生:&nbsp;&nbsp;数据结构</li>
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										本科生:&nbsp;&nbsp;面向对象程序设计(C++)与实践</li>
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										本科生:&nbsp;&nbsp;单片机原理与分析</li>
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										本科生:&nbsp;&nbsp;计算机网络</li>
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										本科生:&nbsp;&nbsp;Web技术</li>
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										本科生:&nbsp;&nbsp;IT专业工具训练</li>
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										本科生:&nbsp;&nbsp;数据结构课程设计</li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<tr style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+			<td style="margin: 0px; padding: 0px; border-width: 0px; border-style: initial; border-color: initial; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+				<table style="border-collapse: collapse; border-spacing: 0px; margin: 0px auto; padding: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; border-width: initial !important; border-style: none !important; border-color: initial !important;" width="100%">
+					<tbody style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+						<tr style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+							<td background="http://cst.dhu.edu.cn/62/80/c3131a25216/images/hengxiangtiaobeijing.jpg" height="30" style="margin: 0px; padding: 0px; border-width: 0px; border-style: initial; border-color: initial; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;" width="100%">
+								<p style="margin: 0px 0px 10px; padding: 0px; border: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: 1.6;">
+									<span style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">&ensp;近几年的论著、专利：</span></p>
+							</td>
+						</tr>
+						<tr style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+							<td style="margin: 0px; padding: 0px; border-width: 0px; border-style: initial; border-color: initial; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+								<ol style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; list-style: none;">
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										&ensp;[1]&ensp;Chen KZ, Feng XY, Wang F and Feng XA&nbsp;&nbsp;A virtual manufacturing system for components made of a multiphase perfect material&nbsp;&nbsp;Computer-Aided Design, Vol. 39, Issue 2, pp.112-124. &nbsp;&nbsp;2007.2</li>
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										&ensp;[2]&ensp;Wang F, Chen KZ, Feng XY and Feng XA&nbsp;&nbsp;Optimization of the spraying process for multiphase perfect materials by means of virtual manufacturing&nbsp;&nbsp;Proceedings of International Conference of Manufacturing Research, Crafied University, U.K.&nbsp;&nbsp;2005.3</li>
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										&ensp;[3]&ensp;Chen KZ, Wang F, Feng XY and Feng XA&nbsp;&nbsp;Behavior modeling for the spraying device in the layered manufacturing process for the components made of a multiphase perfect material&nbsp;&nbsp;Proceedings of the 5th Annual International Conference on Rapid Product Development, Bloemfontein, South Africa, November 2-4, 2004, No.35.&nbsp;&nbsp;2004.11</li>
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										&ensp;[4]&ensp;Xiang-Yang Feng, Yasuhisa Okazaki, Masayoshi Okamoto and Hiroki Kondo&nbsp;&nbsp;Gesture-based expression editing in an on-line handwriting interface for an intelligent algebraic calculation tutoring system&nbsp;&nbsp;International Conference on Computers in Education (ICCE2004),&nbsp;&nbsp;2004.12</li>
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										&ensp;[5]&ensp;Yasuhisa Okazaki, Xiang-Yang Feng, Masayoshi Okamoto and Hiroki Kondo&nbsp;&nbsp;User adaptive on-line handwriting recognition by DDCPM method in a WWW-based intelligent algebraic calculation tutoring system&nbsp;&nbsp;International Conference on Computers in Education (ICCE2004)&nbsp;&nbsp;2004.12</li>
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										&ensp;[6]&ensp;Yasuhisa Okazaki, Xiang-Yang Feng, Masayoshi Okamoto and Hiroki Kondo&nbsp;&nbsp;Stroke Segmentation and Symbol Identification in On-line Handwriting Mathematical Expressions for a WWW-based Intelligent Tutoring System&nbsp;&nbsp;International Conference on Computers in Education (ICCE2003), &nbsp;&nbsp;2003.12</li>
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										&ensp;[7]&ensp;Yasuhisa Okazaki, Xiang-Yang Feng, Masayoshi Okamoto and Hiroki Kondo&nbsp;&nbsp;A Java Based On-line Handwriting Interface for an Intelligent Algebraic Calculation Tutoring System&nbsp;&nbsp;International Conference on Computers in Education (ICCE2002),&nbsp;&nbsp;2002.12</li>
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										&ensp;[8]&ensp;Yasuhisa Okazaki, Xiang-Yang Feng, Masayoshi Okamoto and Hiroki Kondo&nbsp;&nbsp;An Implementation of Mathematical Expression Editing Function in Our On-line Handwriting Interface on the WWW&nbsp;&nbsp;The 18th Annual Conference of Japan Society for Educational Technology&nbsp;&nbsp;2002.11</li>
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										&ensp;[9]&ensp;Xiang-Yang Feng, Yasuhisa Okazaki, Masayoshi Okamoto, Hiroki Kondo&nbsp;&nbsp;Pen-Based Expression Editing in On-line Handwriting Mathematical Expression Input Interface&rdquo;, Heisei 14 Fiscal-Year Electricity Relationship Meeting Kyushu Branch Union Convention&nbsp;&nbsp;Heisei 14 Fiscal-Year Electricity Relationship Meeting Kyushu Branch Union Convention&nbsp;&nbsp;2002.9</li>
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										&ensp;[10]&ensp;Yasuhisa Okazaki, Xiang-Yang Feng, Masayoshi Okamoto and Hiroki Kondo&nbsp;&nbsp;Handwritten Character Recognition in Our On-line Mathematical Expression Input Interface on the WWW&nbsp;&nbsp;27th National Conference of JSISE (Japanese System Information Society of Education), &nbsp;&nbsp;2002.8</li>
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										&ensp;[11]&ensp;Xiang-Yang Feng, Keiichiro Shiiba, Yasuhisa Okazaki, Masayoshi Okamoto, Hiroki Kondo&nbsp;&nbsp;Stroke Data Collection and Evaluation of Character Recognition Performance for our On-line Handwriting Mathematical Expression Input&nbsp;&nbsp;Educational Technology Research Meeting of IEICE (Institute of Electronics, Information and Communication Engineers),&nbsp;&nbsp;2001.12</li>
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										&ensp;[12]&ensp;Yasuhisa Okazaki, Keiichiro Shiiba, Xiang-Yang Feng, Masayoshi Okamoto, Hiroki Kondo&nbsp;&nbsp;A trial of on-line handwriting mathematical expression input interface on the WWW&nbsp;&nbsp;Educational Technology Research Meeting of IEICE (Institute of Electronics, Information and Communication Engineers), &nbsp;&nbsp;2001.12</li>
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										&ensp;[13]&ensp;Yasuhisa Okazaki, Keiichiro Shiiba, Xiang-Yang Feng, Masayoshi Okamoto, Hiroki Kondo&nbsp;&nbsp;A Prototype Handwritten Interface for Mathematical Expression Input and Its Character Recognition Evaluation&nbsp;&nbsp;17th National Conference of JETS (Japanese Educational Technology Society), &nbsp;&nbsp;2001.11</li>
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										&ensp;[14]&ensp;Xiang-Yang Feng, Keiichiro Shiiba, Yasuhisa Okazaki, Masayoshi Okamoto, Hiroki Kondo&nbsp;&nbsp;Java Based On-line Handwriting Interface for Mathematical Expression and Its Character Recognition Performance&nbsp;&nbsp;85th Technology Research Meeting of JSISE (Japanese Society for Information and Systems in Education)&nbsp;&nbsp;2001.11</li>
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										&ensp;[15]&ensp;A Prototype Structure Recognition System for 2-Dimensional Mathematical Expression&nbsp;&nbsp;Keiichiro Shiiba, Xiang-Yang Feng, Yasuhisa Okazaki, Hiroki Kondo&nbsp;&nbsp;Heisei 13 Fiscal-Year Electricity Relationship Meeting Kyushu Branch Union Convention&nbsp;&nbsp;2001.10</li>
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										&ensp;[16]&ensp;Java Based Handwriting Interface for Mathematical Expression&nbsp;&nbsp;Xiang-Yang Feng, Keiichiro Shiiba, Yasuhisa Okazaki, Masayoshi Okamoto, Hiroki Kondo&nbsp;&nbsp;Heisei 13 Fiscal-Year Electricity Relationship Meeting Kyushu Branch Union Convention&nbsp;&nbsp;2001.10</li>
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										&ensp;[17]&ensp;Xiang-Yang Feng, Keiichiro Shiiba, Yasuhisa Okazaki, Masayoshi Okamoto, Hiroki Kondo&nbsp;&nbsp;Stroke Data Collection and Dictionary Customization for On-line Handwriting Mathematical Expression&nbsp;&nbsp;26th National Conference of JSISE (Japanese System Information Society of Education)&nbsp;&nbsp;2001.8</li>
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										&ensp;[18]&ensp;Yasuhisa Okazaki, Keiichiro Shiiba, Xiang-Yang Feng, Masayoshi Okamoto, Hiroki Kondo&nbsp;&nbsp;A Prototype Handwriting Interface for Mathematical Expression Input&nbsp;&nbsp;26th National Conference of JSISE (Japanese System Information Society of Education)&nbsp;&nbsp;2001.8</li>
+								</ol>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<tr style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+			<td style="margin: 0px; padding: 0px; border-width: 0px; border-style: initial; border-color: initial; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+				<table style="border-collapse: collapse; border-spacing: 0px; margin: 0px auto; padding: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; border-width: initial !important; border-style: none !important; border-color: initial !important;" width="100%">
+					<tbody style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+						<tr style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+							<td background="http://cst.dhu.edu.cn/62/80/c3131a25216/images/hengxiangtiaobeijing.jpg" height="30" style="margin: 0px; padding: 0px; border-width: 0px; border-style: initial; border-color: initial; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;" width="100%">
+								<p style="margin: 0px 0px 10px; padding: 0px; border: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: 1.6;">
+									<span style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">&ensp;联系方式：</span></p>
+							</td>
+						</tr>
+						<tr style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+							<td style="margin: 0px; padding: 0px; border-width: 0px; border-style: initial; border-color: initial; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+								<ul style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; list-style: none;">
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										电话：021-67792166</li>
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										邮箱：fengxy@dhu.edu.cn</li>
+									<li style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit;">
+										办公室：1号学院楼253室</li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+</td>
+																</tr>
+
+															</table>
+														</DIV>
+													</TD>
+												</TR>
+											</TBODY>
+										</TABLE>
+									</TD>
+								</TR>
+							</TBODY>
+						</TABLE>
+					</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+	</center>
+
+	
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<base href="http://desktop-4b9g99h:8080/b2csys/">
+
+<title>My JSP 'foot.jsp' starting page</title>
+
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="This is my page">
+<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+<LINK rel=stylesheet type=text/css href="files/css.css">
+</head>
+
+<body>
+	<center>
+		<TABLE border=0 cellSpacing=0 cellPadding=0 width=1050 bgColor=#ffffff
+			align=center>
+			<TBODY>
+				<TR>
+					<TD height=8></TD>
+				</TR>
+				<TR>
+					<TD class=meun bgColor=#37699c height=30 align=middle>版权所有：东华大学
+						&nbsp;&nbsp;技术支持：yhw &nbsp;&nbsp;<a
+						href="/b2csys/admin/login.jsp" target="blank"></a> <IMG
+						border=0 src="files/ga.gif" width=30 height=30></IMG> &nbsp;&nbsp;<IMG
+						border=0 src="files/gangting.gif" width=15 height=15>&nbsp;&nbsp;
+					</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+	</center>
+</body>
+</html>
+
+	<script type="text/javascript">
+		function ck() {
+			if (f1.uname.value == "") {
+				alert("请输入用户名");
+				return false;
+			}
+			if (f1.upass.value == "") {
+				alert("请输入密码");
+				return false;
+			}
+		}
+	
+		
+	</script>
+</body>
+</html>
